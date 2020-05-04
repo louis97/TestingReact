@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Like from '../src/components/Like.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Like/>
   </React.StrictMode>,
   document.getElementById('root')
 );
