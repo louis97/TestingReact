@@ -66,3 +66,36 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+
+
+
+### Animation Branch:
+Reto No. 1: hacer una gráfica de barras, en la que el eje x represente a cada ciudad dentro del arreglo data, y la altura de la barra sea el dato index2005. Incluya un botón y una transición para que se tome como referencia el dato index2006. En la transición cambie el color de las barras.
+Reto No. 2: incluya la gráfica y la animación como un componente de React.
+
+La visualización del componente la puede hacer de la siguiente forma:
+
+import React, { Component } from "react";
+import * as d3 from "d3";
+
+class Animation extends Component {
+  componentDidMount() {
+    const data = [2, 4, 2, 6, 8];
+    this.drawChart(data);
+  }
+
+  drawChart(data) {
+    const canvas = d3.select(this.refs.canvas);
+  }
+
+  render() {
+    return <div ref="canvas"></div>;
+  }
+}
+
+export default Animation;
+
+Recuerde instalar la librería como dependencia del proyecto con el comando npm install d3
