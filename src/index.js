@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Like from '../src/components/Like.js'
+import Animation from '../src/components/Animation.js'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Like/>
-  </React.StrictMode>,
+  //<React.StrictMode>
+    //<Like/>
+  //</React.StrictMode>,
+  <Animation/>,
   document.getElementById('root')
 );
 
